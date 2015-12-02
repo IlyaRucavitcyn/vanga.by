@@ -175,7 +175,7 @@ section{
   text-align:center;
   width:3.5vw;
   height:3.5vw;
-  font-size:0px;    /*CHANGE FOR MEDIA*/
+  font-size:1em;    /*CHANGE FOR MEDIA*/
   right:15px;       /*CHANGE FOR MEDIA*/
   top:42%;
 
@@ -187,43 +187,31 @@ section{
 
 label[for="rrubles"] span, label[for="euro"] span, label[for="usd"] span{
   display:block;
-  border:2px solid white;
+  border:3px solid rgba(233,240,240,0.65);
   border-radius: 50%;
   margin:0 auto;
   width:100%;
   height:100%;
-
+  font-size: 200%;
+  /* vertical-align: middle; */
 }
-
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
  font-family: "fontello";
  font-style: normal;
  font-weight: normal;
  speak: none;
-
  display: inline-block;
  text-decoration: inherit;
  width: 1em;
  margin-right: .2em;
  text-align: center;
- /* opacity: .8; */
-
- /* For safety - reset parent styles, that can break glyph codes*/
+ /* opacity: .8; *//* For safety - reset parent styles, that can break glyph codes*/
  font-variant: normal;
- text-transform: none;
-
- /* fix buttons height, for twitter bootstrap */
- line-height: 1em;
-
- /* Animation center compensation - margins should be symmetric */
- /* remove if not needed */
- margin-left: .2em;
-
- /* you can be more comfortable with increased icons size */
- /* font-size: 120%; */
-
- /* Uncomment for 3D effect */
+ text-transform: none;/* fix buttons height, for twitter bootstrap */
+ line-height: 3.5vw;/* Animation center compensation - margins should be symmetric *//* remove if not needed */
+ margin: 0 auto;/* you can be more comfortable with increased icons size */
+ /* font-size: 120%; *//* Uncomment for 3D effect */
  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 .icon-euro:before { content: '\e800'; } /* '' */
