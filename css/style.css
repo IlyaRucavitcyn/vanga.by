@@ -173,8 +173,8 @@ section{
   position:absolute;
   /*border:1px solid white;*/
   text-align:center;
-  width:70px;       /*CHANGE FOR MEDIA*/
-  height:300px;     /*CHANGE FOR MEDIA*/
+  width:3.5vw;
+  height:3.5vw;
   font-size:0px;    /*CHANGE FOR MEDIA*/
   right:15px;       /*CHANGE FOR MEDIA*/
   top:42%;
@@ -185,27 +185,16 @@ section{
   visibility: hidden;
 }
 
-label[for="rrubles"] span{
+label[for="rrubles"] span, label[for="euro"] span, label[for="usd"] span{
   display:block;
+  border:2px solid white;
+  border-radius: 50%;
   margin:0 auto;
   width:100%;
-  height:25%;
-  /*background:url('../img/rrubleButtonOff.png') no-repeat center;*/
+  height:100%;
+
 }
-label[for="euro"] span{
-  display:block;
-  margin:0 auto;
-  width:100%;
-  height:25%;
-  /*background:url('../img/euroButtonOff.png') no-repeat center;*/
-}
-label[for="usd"] span{
-  display:block;
-  margin:0 auto;
-  width:100%;
-  height:25%;
-  /*background:url('../img/usdButtonOn.png') no-repeat center;*/
-}
+
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
  font-family: "fontello";
