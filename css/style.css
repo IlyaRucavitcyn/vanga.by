@@ -13,7 +13,7 @@ body{
   background-size:cover;
   height:auto;
   overflow:hidden;
-  font-family: 'HelveticaNeueCyr','HelveticaNeue',Arial, sans-serif;
+  font-family: 'Roboto','HelveticaNeueCyr','HelveticaNeue',Arial, sans-serif;
   vertival-align:bottom;
   /*box-shadow:0 0 10px grey;*/
 }
@@ -39,7 +39,7 @@ body{
 }
 
 .slogan span:nth-of-type(2){
-  font-family: 'HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
+  font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
   font-size:1.44em;
   line-height: 0.68;
   font-weight:100;
@@ -47,7 +47,7 @@ body{
 }
 
 .slogan span:nth-of-type(3){
-  font-family: 'HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
+  font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
   font-size:0.74em;
   line-height: 2.2;
   font-weight:100;
@@ -81,7 +81,7 @@ section{
 .inputArea{
   position:relative;
   text-align:center;
-  font-family:'HelveticaNeueCyr Thin','HelveticaNeue Thin',Arial, sans-serif;
+  font-family:'Roboto','HelveticaNeueCyr Thin','HelveticaNeue Thin',Arial, sans-serif;
   font-size:35px; /*CHANGE FOR MEDIA*/
 
 }
@@ -115,7 +115,7 @@ section{
   color: rgba( 255, 255, 255, 0.341 );
 }
 .inputArea input[type="text"][name="exchangeRate"]{
-  font-family: 'HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
+  font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
   font-size: 2.5em;
   top:10%;
   left:5.2%;
@@ -128,7 +128,7 @@ section{
 .inputArea input[type="text"][name="currentExchangeRate"]{
   left: 7.25%;
   bottom: 8%;
-  font-family: 'HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
+  font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
   font-size: 0.5em;
   letter-spacing: 0.09em;
 }
