@@ -195,16 +195,22 @@ label[for="rrubles"] span, label[for="euro"] span, label[for="usd"] span{
   font-size: 200%;
   /* vertical-align: middle; */
 }
+input[type="radio"]:checked+span{
+  background:rgba(233,240,240,0.65);
+}
+input[type="radio"]:checked+span:before{
+  color:black;
+}
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
  font-family: "fontello";
  font-style: normal;
- font-weight: normal;
+ font-weight: thin;
  speak: none;
  display: inline-block;
  text-decoration: inherit;
  width: 1em;
- margin-right: .2em;
+ color:rgba(233,240,240,0.65);
  text-align: center;
  /* opacity: .8; *//* For safety - reset parent styles, that can break glyph codes*/
  font-variant: normal;
