@@ -173,11 +173,11 @@ section{
   position:absolute;
   /*border:1px solid white;*/
   text-align:center;
-  width:3.5vw;
-  height:3.5vw;
+  width:3.0vw;
+  height:3.0vw;
   font-size:1em;    /*CHANGE FOR MEDIA*/
-  right:15px;       /*CHANGE FOR MEDIA*/
-  top:42%;
+  right:32px;       /*CHANGE FOR MEDIA*/
+  top:35.5%;
 }
 
 .currencyChoice input[type="radio"]{
