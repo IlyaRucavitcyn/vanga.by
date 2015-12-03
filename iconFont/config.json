@@ -3,8 +3,8 @@
   "css_prefix_text": "icon-",
   "css_use_suffix": false,
   "hinting": true,
-  "units_per_em": 1000,
-  "ascent": 850,
+  "units_per_em": 2000,
+  "ascent": 1700,
   "glyphs": [
     {
       "uid": "486b835e9eebf54eee78ed12b4291b86",
@@ -23,6 +23,12 @@
       "css": "rouble",
       "code": 59394,
       "src": "fontawesome"
+    },
+    {
+      "uid": "2cfb3f2b46b34a1790aec0aa846297b6",
+      "css": "menu",
+      "code": 59395,
+      "src": "entypo"
     }
   ]
 }
