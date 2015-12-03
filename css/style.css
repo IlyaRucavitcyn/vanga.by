@@ -34,8 +34,8 @@ body{
 .slogan{
   display:inline-block;
   color:rgba(233,240,240,1);
-  margin:2.9% auto auto 3.9%;
-  font-size: 64px; /*CHANGE FOR MEDIA*/
+  margin: 2.7% auto auto 2.8%;
+  font-size: 52px;/*CHANGE FOR MEDIA*/
   line-height:0;
   letter-spacing: 0.18em;
 }
@@ -49,7 +49,7 @@ body{
   display:inline-block;
   content: "";
   line-height:0.8;
-  min-width: 0.46em;
+  min-width: 0.57em;
 }
 
 .slogan span:nth-of-type(2){
