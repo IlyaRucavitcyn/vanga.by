@@ -245,4 +245,9 @@ input[type="radio"]:checked+span:before{
   width:30%;
   height:100%;
   background:white;
+  transition: 1s;
+}
+.infoIconClass.hidden{
+  transition: 1s;
+  left:100%;
 }
