@@ -237,3 +237,12 @@ input[type="radio"]:checked+span:before{
 .icon-rouble:before {
   content: '\e802';
 }
+
+.infoIconClass{
+  position:absolute;
+  top:0;
+  right:0;
+  width:30%;
+  height:100%;
+  background:white;
+}
