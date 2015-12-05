@@ -95,13 +95,17 @@ body{
 
 section{
   position:absolute;
+  width:50%;
+  height: 30%;
   left:50%;
-  top:50%;
+  top: 50.7%;
   transform:translate(-50%,-50%);
 }
 
 .inputArea{
   position:relative;
+  width:100%;
+  height:100%;
   text-align:center;
   font-family:'Roboto','HelveticaNeueCyr Thin','HelveticaNeue Thin',Arial, sans-serif;
   font-size:35px; /*CHANGE FOR MEDIA*/
@@ -110,18 +114,22 @@ section{
 .inputArea label{
   display:inline-block;
   color:rgba( 255, 255, 255, 0.71 );
-  letter-spacing:0.065em;
+  /*letter-spacing:0.065em;*/
   text-shadow: 0.03em 0.05em 0px rgb( 0, 0, 0 );
-  line-height: 1.8;
+  font-size: 0.77em;
+  font-weight: 100;
+  line-height: 0.1;
+  letter-spacing: 0.093em;
 }
 
 .inputWrap{
   position:relative;
-  width:540px;  /*CHANGE FOR MEDIA*/
-  height:140px; /*CHANGE FOR MEDIA*/
+  margin: 0.4% auto 0 auto;
+  width: 61%;/*CHANGE FOR MEDIA*/
+  height: 45%;/*CHANGE FOR MEDIA*/
   background-color:rgba(142,146,146,0.2);
   text-align:left;
-  font-size:1em;
+  font-size: 1em;
 }
 
 .inputArea input[type="text"]{
@@ -138,32 +146,33 @@ section{
 }
 .inputArea input[type="text"][name="exchangeRate"]{
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
-  font-size: 2.5em;
-  top:10%;
-  left:5.2%;
+  font-size: 2.0em;
+  top: 13%;
+  left: 6.4%;
   letter-spacing: 0.115em;
+  font-weight: 100;
   outline: none;
 }
 .inputArea input[type="text"][name="exchangeRate"]:focus{
   background-color: rgba(255, 255, 255, 0.1);
 }
 .inputArea input[type="text"][name="currentExchangeRate"]{
-  left: 7.25%;
-  bottom: 8%;
+  left: 7.4%;
+  bottom: 10.5%;
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
-  font-size: 0.5em;
+  font-size: 0.4em;
   letter-spacing: 0.09em;
 }
 
 .inputArea input[type="button"]{
   position:absolute;
-  width: 21.5%;
-  height: 78.6%;
-  bottom: 9.2%;
-  right: 3.5%;
-  border-radius:5%;
+  width: 21%;
+  height: 72%;
+  bottom: 15%;
+  right: 3.7%;
+  /* border-radius:5%; */
   background-color:rgba(233,240,240,0.651);
-  box-shadow: inset rgba(255, 255, 255, 0.4) 3px 3px 3px 1px, inset rgba(0, 0, 0, 0.3) -3px -3px 3px 1px;
+  /* box-shadow: inset rgba(255, 255, 255, 0.4) 3px 3px 3px 1px, inset rgba(0, 0, 0, 0.3) -3px -3px 3px 1px; */
   border:none;
   outline: none;
 }
