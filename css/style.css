@@ -98,7 +98,7 @@ section{
   width:50%;
   height: 30%;
   left:50%;
-  top: 50.7%;
+  top: 50.3%;
   transform:translate(-50%,-50%);
 }
 
@@ -112,21 +112,21 @@ section{
 
 }
 .inputArea label{
-  display:inline-block;
+  display: inline;
   color:rgba( 255, 255, 255, 0.71 );
   /*letter-spacing:0.065em;*/
   text-shadow: 0.03em 0.05em 0px rgb( 0, 0, 0 );
   font-size: 0.77em;
   font-weight: 100;
-  line-height: 1.0;
-  letter-spacing: 0.093em;
+  line-height: 2;
+  letter-spacing: 0.090em;
 }
 
 .inputWrap{
   position:relative;
   margin:0 auto;
-  width:62%;/*CHANGE FOR MEDIA*/
-  height: 50%;/*CHANGE FOR MEDIA*/
+  width: 30.5vw;/*CHANGE FOR MEDIA*/
+  height: 8vw;/*CHANGE FOR MEDIA*/
   background-color:rgba(142,146,146,0.2);
   text-align:left;
   font-size:1em;
@@ -166,13 +166,13 @@ section{
 
 .inputArea input[type="button"]{
   position:absolute;
-  width: 21.5%;
-  height: 78.6%;
-  bottom: 9.2%;
-  right: 3.5%;
-  border-radius:5%;
+  width: 6.41vw;
+  height: 6.1vw;
+  bottom: 12%;
+  right: 3.7%;
+  /*border-radius:5%;*/
   background-color:rgba(233,240,240,0.651);
-  box-shadow: inset rgba(255, 255, 255, 0.4) 3px 3px 3px 1px, inset rgba(0, 0, 0, 0.3) -3px -3px 3px 1px;
+  /*box-shadow: inset rgba(255, 255, 255, 0.4) 3px 3px 3px 1px, inset rgba(0, 0, 0, 0.3) -3px -3px 3px 1px;*/
   border:none;
   outline: none;
 }
