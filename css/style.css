@@ -129,7 +129,7 @@ section{
   height: 8vw;/*CHANGE FOR MEDIA*/
   background-color:rgba(142,146,146,0.2);
   text-align:left;
-  font-size:1em;
+  font-size: 1em;
 }
 
 .inputArea input[type="text"]{
@@ -157,10 +157,10 @@ section{
   background-color: rgba(255, 255, 255, 0.1);
 }
 .inputArea input[type="text"][name="currentExchangeRate"]{
-  left: 7.25%;
-  bottom: 8%;
+  left: 7.4%;
+  bottom: 10.5%;
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
-  font-size: 0.5em;
+  font-size: 0.4em;
   letter-spacing: 0.09em;
 }
 
