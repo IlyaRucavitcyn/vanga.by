@@ -208,16 +208,33 @@ label[for="rrubles"] span, label[for="euro"] span, label[for="usd"] span{
   height: 3.5vw;
   box-sizing: border-box;
   /*font-size: 200%;*/
-  background:url('img/currency buttons-01.svg') no-repeat 50% 50%;
+
+}
+/*SVG styling*/
+ellipse{
+  opacity:0.65;
+  fill:none;
+  stroke:#E9F0F0;
+  stroke-miterlimit:10;
+}
+g{
+  opacity:0.5;
+}
+path{
+  fill:#FFFFFF;
 }
 
-input[type="radio"]:checked+span{
-  background:rgba(233,240,240,0.65);
+input[type="radio"]:checked+span ellipse{
+  opacity:0.65;
+  fill:#E9F0F0;
+}
+input[type="radio"]:checked+span g{
+  opacity:0.7;
+}
+input[type="radio"]:checked+span path{
+  fill:#0B1010;;
 }
 
-input[type="radio"]:checked+span:before{
-  color:black;
-}
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
  font-family: "fontello";
