@@ -141,7 +141,7 @@ section{
 .input-area input[type="text"][name="exchange-rate"]:focus{
   background-color: rgba(255, 255, 255, 0.1);
 }
-.input-area input[type="text"][name="currentExchangeRate"]{
+.input-area input[type="text"][name="current-exchange-rate"]{
   left: 7.4%;
   bottom: 10.5%;
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
