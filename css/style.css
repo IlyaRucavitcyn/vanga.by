@@ -81,9 +81,16 @@ body{
     padding:0;
     margin:0;
     list-style:none;
-    top: 2%;
+    top: 3%;
     right: 1.65vw;
 }
+
+.moreInfo a{
+  display: inline-block;
+  width: 55%;
+  height:50%;
+}
+
 .icon-menu{
 
 }
