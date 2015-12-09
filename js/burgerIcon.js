@@ -1,4 +1,4 @@
-var burgerIcon = document.getElementById('burgerIconCont');
+var burgerIcon = document.getElementById('burger-icon-cont');
 var infoBar = document.getElementById('info-icon');
 
 burgerIcon.onclick = function(e){
