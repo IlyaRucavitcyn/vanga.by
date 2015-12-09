@@ -60,7 +60,7 @@ body{
   min-width: 5em;
 }
 
-.moreInfo{
+.more-info{
     position:absolute;
     width:3.5vw;
     text-align:center;
@@ -71,7 +71,7 @@ body{
     right: 1.65vw;
 }
 
-.moreInfo a{
+.more-info a{
   display: inline-block;
   width: 55%;
   height:50%;
@@ -86,7 +86,7 @@ section{
   transform:translate(-50%,-50%);
 }
 
-.inputArea{
+.input-area{
   position:relative;
   width:100%;
   height:100%;
@@ -95,7 +95,7 @@ section{
   font-size:35px; /*CHANGE FOR MEDIA*/
 
 }
-.inputArea label{
+.input-area label{
   display: inline;
   color:rgba( 255, 255, 255, 0.71 );
   /*letter-spacing:0.065em;*/
@@ -116,7 +116,7 @@ section{
   font-size: 1em;
 }
 
-.inputArea input[type="text"]{
+.input-area input[type="text"]{
   -webkit-appearance: none;
   -moz-appearance: none;
   display:block;
@@ -128,7 +128,7 @@ section{
   line-height: 1.2;
   color: rgba( 255, 255, 255, 0.341 );
 }
-.inputArea input[type="text"][name="exchangeRate"]{
+.input-area input[type="text"][name="exchangeRate"]{
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
   font-size: 2.0em;
   top: 13%;
@@ -137,10 +137,10 @@ section{
   font-weight: 100;
   outline: none;
 }
-.inputArea input[type="text"][name="exchangeRate"]:focus{
+.input-area input[type="text"][name="exchangeRate"]:focus{
   background-color: rgba(255, 255, 255, 0.1);
 }
-.inputArea input[type="text"][name="currentExchangeRate"]{
+.input-area input[type="text"][name="currentExchangeRate"]{
   left: 7.4%;
   bottom: 10.5%;
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
@@ -148,7 +148,7 @@ section{
   letter-spacing: 0.09em;
 }
 
-.inputArea input[type="button"]{
+.input-area input[type="button"]{
   position:absolute;
   width: 6.41vw;
   height: 6.1vw;
@@ -160,11 +160,11 @@ section{
   border:none;
   outline: none;
 }
-.inputArea input[type="button"]:hover{
+.input-area input[type="button"]:hover{
   background-color:rgba(233,240,240,0.75);
   cursor:pointer;
 }
-.inputArea input[type="button"]:active{
+.input-area input[type="button"]:active{
   background-color:rgba(250,240,240,0.75);
   box-shadow: inset rgba(255, 255, 255, 0.4) 2px 2px 2px 1px, inset rgba(0, 0, 0, 0.3) -2px -2px 2px 1px;
   cursor:pointer;
