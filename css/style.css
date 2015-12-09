@@ -106,7 +106,7 @@ section{
   letter-spacing: 0.090em;
 }
 
-.inputWrap{
+.input-wrap{
   position:relative;
   margin:0 auto;
   width: 30.5vw;/*CHANGE FOR MEDIA*/
