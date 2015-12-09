@@ -1,5 +1,5 @@
 var burgerIcon = document.getElementById('burgerIconCont');
-var infoBar = document.getElementById('infoIcon');
+var infoBar = document.getElementById('info-icon');
 
 burgerIcon.onclick = function(e){
   var target = e.target;
