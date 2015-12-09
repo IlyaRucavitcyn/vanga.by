@@ -171,7 +171,7 @@ section{
   cursor:pointer;
 }
 
-.currencyChoice{
+.currency-choice{
   position:absolute;
   text-align:center;
   font-size:1em;/*CHANGE FOR MEDIA*/
@@ -180,7 +180,7 @@ section{
   text-align: center;
 }
 
-.currencyChoice input[type="radio"]{
+.currency-choice input[type="radio"]{
   visibility: hidden;
 }
 
