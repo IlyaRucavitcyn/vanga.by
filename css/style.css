@@ -128,7 +128,8 @@ section{
   line-height: 1.2;
   color: rgba( 255, 255, 255, 0.341 );
 }
-.input-area input[type="text"][name="exchangeRate"]{
+
+.input-area input[type="text"][name="exchange-rate"]{
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
   font-size: 2.0em;
   top: 13%;
@@ -137,7 +138,7 @@ section{
   font-weight: 100;
   outline: none;
 }
-.input-area input[type="text"][name="exchangeRate"]:focus{
+.input-area input[type="text"][name="exchange-rate"]:focus{
   background-color: rgba(255, 255, 255, 0.1);
 }
 .input-area input[type="text"][name="currentExchangeRate"]{
