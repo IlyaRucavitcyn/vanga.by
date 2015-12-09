@@ -245,7 +245,7 @@ footer{
   background-size: 100% 100%;
 }
 
-.infoIconClass{
+.info-icon-class{
   position:absolute;
   top:0;
   left:70%;
@@ -255,6 +255,6 @@ footer{
   transition:left 1s ease;
 }
 
-.infoIconClass.hide{
+.info-icon-class.hide{
   left:100%;
 }
