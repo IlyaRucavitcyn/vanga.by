@@ -228,13 +228,13 @@ footer{
   bottom:0;
 }
 
-.infoButtonContainer{
+.info-button-container{
   position:relative;
   width:50%;
   min-height:200px;
 }
 
-.infoButtonContainer a {
+.info-button-container a {
   display:block;
   position:absolute;
   bottom: 10%;
