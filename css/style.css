@@ -219,6 +219,30 @@ input[type="radio"]:checked+span path{
   fill:#0B1010;;
 }
 
+footer{
+  display:block;
+  position:absolute;
+  width:100%;
+  min-height:200px;
+  bottom:0;
+}
+
+.infoButtonContainer{
+  position:relative;
+  width:50%;
+  min-height:200px;
+}
+
+.infoButtonContainer a {
+  display:block;
+  position:absolute;
+  bottom: 10%;
+  left: 4.2%;
+  width: 2.7vw;
+  height: 2.7vw;
+  background: url('../img/i-button.svg');
+  background-size: 100% 100%;
+}
 
 .infoIconClass{
   position:absolute;
