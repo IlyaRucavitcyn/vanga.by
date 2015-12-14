@@ -166,16 +166,17 @@ section{
   outline: none;
 }
 
-.input-area input[type="button"] .usd{
-  background-image:url('img/usd_checked.svg');
+.input-area input[type="button"].usd{
+  background-image:url('../img/usd_checked.svg');
+  background-size: 100% 100%;
 }
 
-.input-area input[type="button"] .euro{
-  background-image:url('img/euro_checked.svg');
+.input-area input[type="button"].euro{
+  background-image:url('../img/euro_checked.svg');
 }
 
-.input-area input[type="button"] .rruble{
-  background-image:url('img/rruble_checked.svg');
+.input-area input[type="button"].rruble{
+  background-image:url('../img/rruble_checked.svg');
 }
 
 .input-area input[type="button"]:hover{
