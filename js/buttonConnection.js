@@ -3,6 +3,7 @@ var currentCurrencyButton = document.getElementById('current-currency');
 
 currencyChoiceContainer.onclick = function(e){
   // var target = e.target;
+  currentCurrencyButton.classList.remove(currentCurrencyButton.dataset.currency);
   if(usd.checked){
     currentCurrencyButton.style.backgroundImage="url('img/usd_checked.svg')";
   } else if(euro.checked){
