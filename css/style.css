@@ -166,6 +166,10 @@ section{
   outline: none;
 }
 
+.input-area input[type="button"] .usd{
+  background-image:url('img/usd_checked.svg');
+}
+
 .input-area input[type="button"]:hover{
   background-color:rgba(233,240,240,0.75);
   cursor:pointer;
