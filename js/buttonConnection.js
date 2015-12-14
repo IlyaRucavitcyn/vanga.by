@@ -5,10 +5,13 @@ currencyChoiceContainer.onclick = function(e){
   // var target = e.target;
   currentCurrencyButton.classList.remove(currentCurrencyButton.dataset.currency);
   if(usd.checked){
-    currentCurrencyButton.style.backgroundImage="url('img/usd_checked.svg')";
+    currentCurrencyButton.classList.add('usd');
+    currentCurrencyButton.dataset.currency="usd";
   } else if(euro.checked){
-    currentCurrencyButton.style.backgroundImage="url('img/euro_checked.svg')";
+    currentCurrencyButton.classList.add('euro');
+    currentCurrencyButton.dataset.currency="euro";
   } else if (rrubles.checked) {
-    currentCurrencyButton.style.backgroundImage="url('img/rruble_checked.svg')";
+    currentCurrencyButton.classList.add('rruble');
+    currentCurrencyButton.dataset.currency="rruble";
   }
 };
