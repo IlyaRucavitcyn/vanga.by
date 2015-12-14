@@ -32,7 +32,7 @@
               <ul id="burger-icon-cont" class="more-info">
                 <li class="mainLink"><a href="#"><img src="img/burgerbutton.svg" alt="burgerIcon" /></a></li>
               </ul>
-              <div class="currency-choice">
+              <div id="currency-choice-container" class="currency-choice">
                 <label for="usd"><input id="usd" type="radio" checked="checked" name="currencyChoosing"/>
                   <span class="icon-dollar">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -85,7 +85,7 @@
               <form class="input-area" action="index.html" method="post">
                   <label for="exchangeValue">ВАНГУЮ КУРС НА ЗАВТРА</label>
                   <div class="input-wrap">
-                    <input type="button" name="name" value="">
+                    <input id="current-currency" type="button" name="name" value="">
                     <input id="exchangeValue" type="text" placeholder="17550" name="exchange-rate"></br>
                     <input type="text" readonly name="current-exchange-rate" placeholder="ТЕКУЩИЙ КУРС (20.11.2015)">
                   </div>
