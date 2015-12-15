@@ -218,7 +218,7 @@ section{
 }
 
 .currency-button.USD{
-  background:url('../img/USD_unchecked.svg');
+  background:url('../img/USD_unchecked.svg') no-repeat;
 }
 
 .currency-button.USD.active{
@@ -226,19 +226,19 @@ section{
 }
 
 .currency-button.EUR{
-  background:url('../img/EUR_unchecked.svg');
+  background:url('../img/EUR_unchecked.svg') no-repeat;
 }
 
 .currency-button.EUR.active{
-  background:url('../img/EUR_checked_for_currency_button.svg');
+  background:url('../img/EUR_checked_for_currency_button.svg') no-repeat;
 }
 
 .currency-button.RUB{
-  background:url('../img/RUB_unchecked.svg');
+  background:url('../img/RUB_unchecked.svg') no-repeat;
 }
 
 .currency-button.RUB.active{
-  background:url('../img/RUB_checked_for_currency_button.svg');
+  background:url('../img/RUB_checked_for_currency_button.svg') no-repeat;
 }
 
 
