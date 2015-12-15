@@ -166,8 +166,8 @@ section{
   outline: none;
 }
 
-.input-area input[type="button"].usd{
-  background-image:url('../img/usd_checked.svg');
+.input-area input[type="button"].USD{
+  background-image:url('../img/USD_checked.svg');
   background-size: 100% 100%;
 }
 
@@ -203,7 +203,7 @@ section{
   visibility: hidden;
 }
 
-label[for="rrubles"] span, label[for="EUR"] span, label[for="usd"] span{
+label[for="rrubles"] span, label[for="EUR"] span, label[for="USD"] span{
   display:block;
   /*border:3px solid rgba(233,240,240,0.65);*/
   border-radius: 50%;
