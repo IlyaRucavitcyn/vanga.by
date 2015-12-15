@@ -110,8 +110,8 @@ section{
 .input-wrap{
   position:relative;
   margin:0 auto;
-  width: 30.5vw;/*CHANGE FOR MEDIA*/
-  height: 8vw;/*CHANGE FOR MEDIA*/
+  width: 440px;/*CHANGE FOR MEDIA*/
+  height: 115px;/*CHANGE FOR MEDIA*/
   background-color:rgba(142,146,146,0.2);
   text-align:left;
   font-size: 1em;
