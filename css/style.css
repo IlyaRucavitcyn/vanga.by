@@ -217,9 +217,30 @@ section{
   box-sizing: border-box;
 }
 
+.currency-button.USD{
+  background:url('../img/USD_unchecked.svg');
+}
+
 .currency-button.USD.active{
   background:url('../img/USD_checked_for_currency_button.svg');
 }
+
+.currency-button.EUR{
+  background:url('../img/EUR_unchecked.svg');
+}
+
+.currency-button.EUR.active{
+  background:url('../img/EUR_checked_for_currency_button.svg');
+}
+
+.currency-button.RUB{
+  background:url('../img/RUB_unchecked.svg');
+}
+
+.currency-button.RUB.active{
+  background:url('../img/RUB_checked_for_currency_button.svg');
+}
+
 
 /*SVG styling*/
 ellipse{
