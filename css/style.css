@@ -255,9 +255,9 @@ footer{
   display:block;
   position:absolute;
   bottom: 10%;
-  left: 4.2%;
-  width: 2.7vw;
-  height: 2.7vw;
+  left: 4.3%;
+  width: 38px;
+  height: 38px;
   background: url('../img/ibutton.svg');
   background-size: 100% 100%;
 }
