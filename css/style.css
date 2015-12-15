@@ -154,10 +154,10 @@ section{
 
 .input-area input[type="button"]{
   position:absolute;
-  width: 6.41vw;
-  height: 6.1vw;
+  width: 92px;
+  height: 87px;
   bottom: 12%;
-  right: 3.7%;
+  right: 4%;
   /*border-radius:5%;*/
   background: rgba(233,240,240,0.651);
   background-size: 100% 100%;
