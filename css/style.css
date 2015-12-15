@@ -218,7 +218,7 @@ section{
 }
 
 .currency-button.USD.active{
-  background:url('../img/USD_checked.svg');
+  background:url('../img/USD_checked_for_currency_button.svg');
 }
 
 /*SVG styling*/
