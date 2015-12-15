@@ -194,8 +194,8 @@ section{
   position:absolute;
   text-align:center;
   font-size:1em;/*CHANGE FOR MEDIA*/
-  right: 1.65vw;/*CHANGE FOR MEDIA*/
-  top: 35.05%;
+  right: 1.8%;/*CHANGE FOR MEDIA*/
+  top: 37.4%;
   text-align: center;
 }
 
@@ -207,6 +207,7 @@ section{
   display:block;
   outline:none;
   border:3px solid rgba(233,240,240,0.65);
+  background:none;
   border-radius: 50%;
   margin:0 auto;
   padding:0;
