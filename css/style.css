@@ -20,7 +20,7 @@ body{
 .slogan{
   display:inline-block;
   color:rgba(233,240,240,1);
-  margin: 2.7% auto auto 2.8%;
+  margin: 39px auto auto 40px;
   font-size: 52px;/*CHANGE FOR MEDIA*/
   line-height:0;
   letter-spacing: 0.18em;
@@ -29,7 +29,7 @@ body{
 .slogan span:nth-of-type(1){
   font-size:1em;
   font-weight:500;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.21em;
   line-height: 0.75;
 }
 
