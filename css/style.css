@@ -209,8 +209,8 @@ section{
   border:3px solid rgba(233,240,240,0.65);
   background:none;
   border-radius: 50%;
-  margin:0 auto;
-  padding:0;
+  margin: 0 auto 19px auto;
+  padding:0 0 10px 0;
   width: 3.5vw;
   height: 3.5vw;
   box-sizing: border-box;
