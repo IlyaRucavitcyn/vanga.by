@@ -213,12 +213,12 @@ section{
   margin: 0 auto 19px auto;
   padding:0 0 10px 0;
   width: 50px;
-  height: 3.5vw;
+  height: 50px;
   box-sizing: border-box;
 }
 
 .currency-button.USD{
-  background:url('../img/USD_unchecked.svg') no-repeat;
+  background:url('../img/USD_unchecked.svg');
 }
 
 .currency-button.USD.active{
@@ -226,19 +226,19 @@ section{
 }
 
 .currency-button.EUR{
-  background:url('../img/EUR_unchecked.svg') no-repeat;
+  background:url('../img/EUR_unchecked.svg');
 }
 
 .currency-button.EUR.active{
-  background:url('../img/EUR_checked_for_currency_button.svg') no-repeat;
+  background:url('../img/EUR_checked_for_currency_button.svg');
 }
 
 .currency-button.RUB{
-  background:url('../img/RUB_unchecked.svg') no-repeat;
+  background:url('../img/RUB_unchecked.svg');
 }
 
 .currency-button.RUB.active{
-  background:url('../img/RUB_checked_for_currency_button.svg') no-repeat;
+  background:url('../img/RUB_checked_for_currency_button.svg');
 }
 
 
