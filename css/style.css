@@ -20,7 +20,7 @@ body{
 .slogan{
   display:inline-block;
   color:rgba(233,240,240,1);
-  margin: 2.7% auto auto 2.8%;
+  margin: 39px auto auto 40px;
   font-size: 52px;/*CHANGE FOR MEDIA*/
   line-height:0;
   letter-spacing: 0.18em;
@@ -29,7 +29,7 @@ body{
 .slogan span:nth-of-type(1){
   font-size:1em;
   font-weight:500;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.21em;
   line-height: 0.75;
 }
 
@@ -63,13 +63,13 @@ body{
 
 .more-info{
     position:absolute;
-    width:3.5vw;
+    width: 50px;
     text-align:center;
     padding:0;
     margin:0;
     list-style:none;
     top: 3%;
-    right: 1.65vw;
+    right: 1.8%;
 }
 
 .more-info a{
@@ -80,20 +80,20 @@ body{
 
 section{
   position:absolute;
-  width:50%;
-  height: 30%;
+  /* width: 100%; */
+  /* height: 30%; */
   left:50%;
-  top: 50.3%;
+  top: 44.5%;
   transform:translate(-50%,-50%);
 }
 
 .input-area{
   position:relative;
-  width:100%;
+  width: 100%;
   height:100%;
   text-align:center;
   font-family:'Roboto','HelveticaNeueCyr Thin','HelveticaNeue Thin',Arial, sans-serif;
-  font-size:35px; /*CHANGE FOR MEDIA*/
+  font-size:35px;/*CHANGE FOR MEDIA*/
 }
 
 .input-area label{
@@ -110,8 +110,8 @@ section{
 .input-wrap{
   position:relative;
   margin:0 auto;
-  width: 30.5vw;/*CHANGE FOR MEDIA*/
-  height: 8vw;/*CHANGE FOR MEDIA*/
+  width: 440px;/*CHANGE FOR MEDIA*/
+  height: 115px;/*CHANGE FOR MEDIA*/
   background-color:rgba(142,146,146,0.2);
   text-align:left;
   font-size: 1em;
@@ -154,15 +154,29 @@ section{
 
 .input-area input[type="button"]{
   position:absolute;
-  width: 6.41vw;
-  height: 6.1vw;
+  width: 92px;
+  height: 87px;
   bottom: 12%;
-  right: 3.7%;
+  right: 4%;
   /*border-radius:5%;*/
-  background-color:rgba(233,240,240,0.651);
+  background: rgba(233,240,240,0.651);
+  background-size: 100% 100%;
   /*box-shadow: inset rgba(255, 255, 255, 0.4) 3px 3px 3px 1px, inset rgba(0, 0, 0, 0.3) -3px -3px 3px 1px;*/
   border:none;
   outline: none;
+}
+
+.input-area input[type="button"].USD{
+  background-image:url('../img/USD_checked.svg');
+  background-size: 100% 100%;
+}
+
+.input-area input[type="button"].EUR{
+  background-image:url('../img/EUR_checked.svg');
+}
+
+.input-area input[type="button"].RUB{
+  background-image:url('../img/RUB_checked.svg');
 }
 
 .input-area input[type="button"]:hover{
@@ -180,65 +194,60 @@ section{
   position:absolute;
   text-align:center;
   font-size:1em;/*CHANGE FOR MEDIA*/
-  right: 1.65vw;/*CHANGE FOR MEDIA*/
-  top: 35.05%;
+  right: 1.8%;/*CHANGE FOR MEDIA*/
+  top: 37.4%;
   text-align: center;
 }
 
-.currency-choice input[type="radio"]{
-  visibility: hidden;
-}
-
-label[for="rrubles"] span, label[for="euro"] span, label[for="usd"] span{
+.currency-button{
   display:block;
-  /*border:3px solid rgba(233,240,240,0.65);*/
+  outline:none;
+  border:none;
+  background:none;
+  background-size:100% 100%;
   border-radius: 50%;
-  margin:0 auto;
-  width: 3.5vw;
-  height: 3.5vw;
+  margin: 0 auto 19px auto;
+  padding:0 0 10px 0;
+  width: 50px;
+  height: 50px;
   box-sizing: border-box;
 }
 
-/*SVG styling*/
-ellipse{
-  opacity:0.65;
-  fill:none;
-  stroke:#E9F0F0;
-  stroke-miterlimit:10;
+.currency-button.USD{
+  background:url('../img/USD_unchecked.svg') no-repeat;
 }
 
-g{
-  opacity:0.5;
+.currency-button.USD.active{
+  background: url('../img/USD_checked_for_currency_button.svg') no-repeat;
 }
 
-path{
-  fill:#FFFFFF;
+.currency-button.EUR{
+  background:url('../img/EUR_unchecked.svg') no-repeat;
 }
 
-input[type="radio"]:checked+span ellipse{
-  opacity:0.65;
-  fill:#E9F0F0;
+.currency-button.EUR.active{
+  background:url('../img/EUR_checked_for_currency_button.svg') no-repeat;
 }
 
-input[type="radio"]:checked+span g{
-  opacity:0.7;
+.currency-button.RUB{
+  background:url('../img/RUB_unchecked.svg') no-repeat;
 }
 
-input[type="radio"]:checked+span path{
-  fill:#0B1010;;
+.currency-button.RUB.active{
+  background:url('../img/RUB_checked_for_currency_button.svg') no-repeat;
 }
 
 footer{
   display:block;
   position:absolute;
-  width:100%;
+  width: 50%;
   min-height:200px;
   bottom:0;
 }
 
 .info-button-container{
   position:relative;
-  width:50%;
+  width: 100%;
   min-height:200px;
 }
 
@@ -246,9 +255,9 @@ footer{
   display:block;
   position:absolute;
   bottom: 10%;
-  left: 4.2%;
-  width: 2.7vw;
-  height: 2.7vw;
+  left: 4.3%;
+  width: 38px;
+  height: 38px;
   background: url('../img/ibutton.svg');
   background-size: 100% 100%;
 }
