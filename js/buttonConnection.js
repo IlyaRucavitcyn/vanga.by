@@ -3,6 +3,10 @@ var currentCurrencyButton = document.getElementById('current-currency');
 
 currencyChoiceContainer.onclick = function(e){
    var target = e.target;
+   //Checking whether we pushed a button or a free space in 'currency-choice-container'
+   if(!target.classList.contains('currency-button')){
+     return;
+   }
   // while (target != this) {
   //     if (target.tagName === 'LABEL') {
   //       currentCurrencyButton.classList.remove(currentCurrencyButton.dataset.currency);
