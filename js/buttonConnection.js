@@ -13,6 +13,16 @@ currencyChoiceContainer.onclick = function(e){
    };
    //All currency button collection forming
    var buttonCollection = this.getElementsByClassName('currency-button');
+   //forEach method definition for buttonCollection
+   var forEach = [].forEach;
+   forEach.call(buttonCollection,function(x){
+     if(x.classList.contains('active')){
+       x.classList.remove('active');
+       currentCurrencyButton.classList.remove(x.getAttribute('id'));
+     };
+    });
+    target.classList.add('active');
+    currentCurrencyButton.classList.add(target.getAttribute('id'));
   // while (target != this) {
   //     if (target.tagName === 'LABEL') {
   //       currentCurrencyButton.classList.remove(currentCurrencyButton.dataset.currency);
