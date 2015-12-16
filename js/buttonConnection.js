@@ -7,6 +7,10 @@ currencyChoiceContainer.onclick = function(e){
    if(!target.classList.contains('currency-button')){
      return;
    };
+   //Checking whether we pushed the current currency-button
+   if(target.classList.contains('active')){
+     return;
+   };
    //All currency button collection forming
    var buttonCollection = this.getElementsByClassName('currency-button');
   // while (target != this) {
