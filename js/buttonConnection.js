@@ -6,7 +6,9 @@ currencyChoiceContainer.onclick = function(e){
    //Checking whether we pushed a button or a free space in 'currency-choice-container'
    if(!target.classList.contains('currency-button')){
      return;
-   }
+   };
+   //All currency button collection forming
+   var buttonCollection = this.getElementsByClassName('currency-button');
   // while (target != this) {
   //     if (target.tagName === 'LABEL') {
   //       currentCurrencyButton.classList.remove(currentCurrencyButton.dataset.currency);
