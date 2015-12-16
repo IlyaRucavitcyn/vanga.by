@@ -240,14 +240,14 @@ section{
 footer{
   display:block;
   position:absolute;
-  width:100%;
+  width: 50%;
   min-height:200px;
   bottom:0;
 }
 
 .info-button-container{
   position:relative;
-  width:50%;
+  width: 100%;
   min-height:200px;
 }
 
