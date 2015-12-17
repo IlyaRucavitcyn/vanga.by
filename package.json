@@ -1,0 +1,21 @@
+{
+  "name": "vanga",
+  "version": "0.0.1",
+  "description": "a new try",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaRucavitcyn/vanga.by.git"
+  },
+  "author": "ilya.rucavitcyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlyaRucavitcyn/vanga.by/issues"
+  },
+  "homepage": "https://github.com/IlyaRucavitcyn/vanga.by#readme"
+}
