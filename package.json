@@ -2,7 +2,7 @@
   "name": "vanga",
   "version": "0.0.1",
   "description": "a new try",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
