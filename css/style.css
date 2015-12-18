@@ -9,16 +9,17 @@ body{
   min-height: 100%;
   margin: 0 auto 0 0;
   padding-top:1px;/*to avoid margin collapsing*/
+  background:rgb(0,0,0);
   background:rgba(0,0,0,0.16);
   background-size:cover;
   height:auto;
   overflow:hidden;
   font-family: 'Roboto','HelveticaNeueCyr','HelveticaNeue',Arial, sans-serif;
-  vertival-align:bottom;
 }
 
 .slogan{
   display:inline-block;
+  color:rgb(233,240,240);
   color:rgba(233,240,240,1);
   margin: 39px auto auto 40px;
   font-size: 52px;/*CHANGE FOR MEDIA*/
@@ -98,9 +99,10 @@ section{
 
 .input-area label{
   display: inline;
+  color:rgb( 255, 255, 255);
   color:rgba( 255, 255, 255, 0.71 );
   /*letter-spacing:0.065em;*/
-  text-shadow: 0.03em 0.05em 0px rgb( 0, 0, 0 );
+  text-shadow: 0.03em 0.05em 0 rgb( 0, 0, 0 );
   font-size: 0.77em;
   font-weight: 100;
   line-height: 2;
@@ -112,6 +114,7 @@ section{
   margin:0 auto;
   width: 440px;/*CHANGE FOR MEDIA*/
   height: 115px;/*CHANGE FOR MEDIA*/
+  background-color:#8e9292;
   background-color:rgba(142,146,146,0.2);
   text-align:left;
   font-size: 1em;
@@ -127,6 +130,7 @@ section{
   border:none;
   font-size:1em;
   line-height: 1.2;
+  color: rgb( 255, 255, 255);
   color: rgba( 255, 255, 255, 0.341 );
 }
 
@@ -141,6 +145,7 @@ section{
 }
 
 .input-area input[type="text"][name="exchange-rate"]:focus{
+  background-color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -158,7 +163,7 @@ section{
   height: 87px;
   bottom: 12%;
   right: 4%;
-  /*border-radius:5%;*/
+  background: rgb(233,240,240);
   background: rgba(233,240,240,0.651);
   background-size: 100% 100%;
   /*box-shadow: inset rgba(255, 255, 255, 0.4) 3px 3px 3px 1px, inset rgba(0, 0, 0, 0.3) -3px -3px 3px 1px;*/
@@ -180,11 +185,13 @@ section{
 }
 
 .input-area input[type="button"]:hover{
+  background-color: #E9F0F0;
   background-color:rgba(233,240,240,0.75);
   cursor:pointer;
 }
 
 .input-area input[type="button"]:active{
+  background-color: #FAF0F0;
   background-color:rgba(250,240,240,0.75);
   box-shadow: inset rgba(255, 255, 255, 0.4) 2px 2px 2px 1px, inset rgba(0, 0, 0, 0.3) -2px -2px 2px 1px;
   cursor:pointer;
@@ -196,7 +203,6 @@ section{
   font-size:1em;/*CHANGE FOR MEDIA*/
   right: 1.8%;/*CHANGE FOR MEDIA*/
   top: 37.4%;
-  text-align: center;
 }
 
 .currency-button{
