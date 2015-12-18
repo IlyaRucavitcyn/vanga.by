@@ -1,0 +1,24 @@
+{
+  "name": "vanga",
+  "version": "0.0.1",
+  "description": "testing vanga.by project",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-csslint": "^0.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaRucavitcyn/vanga.by.git"
+  },
+  "author": "ilya.rucavitcyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlyaRucavitcyn/vanga.by/issues"
+  },
+  "homepage": "https://github.com/IlyaRucavitcyn/vanga.by#readme"
+}
