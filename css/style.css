@@ -63,14 +63,14 @@ body{
 }
 
 .more-info{
-    position:absolute;
-    width: 50px;
-    text-align:center;
-    padding:0;
-    margin:0;
-    list-style:none;
-    top: 3%;
-    right: 1.8%;
+  position:absolute;
+  width: 50px;
+  text-align:center;
+  padding:0;
+  margin:0;
+  list-style:none;
+  top: 3%;
+  right: 1.8%;
 }
 
 .more-info a{
@@ -141,12 +141,16 @@ section{
   left: 6.4%;
   letter-spacing: 0.115em;
   font-weight: 100;
-  outline: none;
 }
 
 .input-area input[type="text"][name="exchange-rate"]:focus{
+  outline: none;
   background-color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.input-area input[type="text"][name="exchange-rate"]:active{
+  outline:none;
 }
 
 .input-area input[type="text"][name="current-exchange-rate"]{
@@ -166,8 +170,10 @@ section{
   background: rgb(233,240,240);
   background: rgba(233,240,240,0.651);
   background-size: 100% 100%;
-  /*box-shadow: inset rgba(255, 255, 255, 0.4) 3px 3px 3px 1px, inset rgba(0, 0, 0, 0.3) -3px -3px 3px 1px;*/
   border:none;
+}
+
+.input-area input[type="button"]:focus, .input-area input[type="button"]:active{
   outline: none;
 }
 
@@ -207,7 +213,6 @@ section{
 
 .currency-button{
   display:block;
-  outline:none;
   border:none;
   background:none;
   background-size:100% 100%;
@@ -217,6 +222,10 @@ section{
   width: 50px;
   height: 50px;
   box-sizing: border-box;
+}
+
+.currency-button:focus, .currency-button:active{
+  outline:none;
 }
 
 .currency-button.USD{
