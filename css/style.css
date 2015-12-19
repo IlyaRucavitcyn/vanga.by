@@ -149,10 +149,6 @@ section{
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/*.input-area input[type="text"][name="exchange-rate"]:active{
-  outline:none;
-}*/
-
 .input-area input[type="text"][name="current-exchange-rate"]{
   left: 7.4%;
   bottom: 10.5%;
@@ -175,6 +171,7 @@ section{
 
 .input-area input[type="button"]:focus{
   outline: 0;
+  opacity: 0.651;
 }
 
 .input-area input[type="button"].USD{
@@ -226,6 +223,7 @@ section{
 
 .currency-button:focus{
   outline:0;
+  opacity: 1;
 }
 
 .currency-button.USD{
