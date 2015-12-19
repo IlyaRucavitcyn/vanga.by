@@ -144,14 +144,14 @@ section{
 }
 
 .input-area input[type="text"][name="exchange-rate"]:focus{
-  outline: none;
+  outline: 0;
   background-color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.input-area input[type="text"][name="exchange-rate"]:active{
+/*.input-area input[type="text"][name="exchange-rate"]:active{
   outline:none;
-}
+}*/
 
 .input-area input[type="text"][name="current-exchange-rate"]{
   left: 7.4%;
@@ -173,8 +173,8 @@ section{
   border:none;
 }
 
-.input-area input[type="button"]:focus, .input-area input[type="button"]:active{
-  outline: none;
+.input-area input[type="button"]:focus{
+  outline: 0;
 }
 
 .input-area input[type="button"].USD{
@@ -224,8 +224,8 @@ section{
   box-sizing: border-box;
 }
 
-.currency-button:focus, .currency-button:active{
-  outline:none;
+.currency-button:focus{
+  outline:0;
 }
 
 .currency-button.USD{
