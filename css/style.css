@@ -4,6 +4,36 @@ html{
   background-size:cover;
 }
 
+/*Setting abstraction classes for the font-sizing*/
+
+.font-style-1{
+  font-size:52px;
+}
+
+.font-style-2{
+    font-size:1.44em;
+}
+
+.font-style-3{
+  font-size:0.74em;
+}
+
+.font-style-4{
+  font-size:0.673em;
+}
+
+.font-style-5{
+  font-size: 0.77em;
+}
+
+.font-style-6{
+  font-size: 2.0em;
+}
+
+.font-style-7{
+  font-size: 0.4em;
+}
+
 body{
   width:100%;
   min-height: 100%;
@@ -15,9 +45,6 @@ body{
   height:auto;
   overflow:hidden;
   font-family: 'Roboto','HelveticaNeueCyr','HelveticaNeue',Arial, sans-serif;
-}
-.font-style-1{
-  font-size:52px;
 }
 
 .slogan{
@@ -48,18 +75,10 @@ body{
   line-height: 0.68;
 }
 
-.font-style-2{
-    font-size:1.44em;
-}
-
 .slogan span:last-of-type{
   font-weight:100;
   letter-spacing: 0.0505em;
   line-height:2.15;
-}
-
-.font-style-3{
-  font-size:0.74em;
 }
 
 .slogan span:nth-of-type(3):before{
@@ -103,10 +122,6 @@ section{
   font-family:'Roboto','HelveticaNeueCyr Thin','HelveticaNeue Thin',Arial, sans-serif;
 }
 
-.font-style-4{
-  font-size:0.673em;
-}
-
 .input-area label{
   display: inline;
   color:rgb( 255, 255, 255);
@@ -116,10 +131,6 @@ section{
   font-weight: 100;
   line-height: 2;
   letter-spacing: 0.090em;
-}
-
-.font-style-5{
-  font-size: 0.77em;
 }
 
 .input-wrap{
@@ -153,10 +164,6 @@ section{
   font-weight: 100;
 }
 
-.font-style-6{
-  font-size: 2.0em;
-}
-
 .input-area input[type="text"][name="exchange-rate"]:focus{
   outline: 0;
   background-color: #FFFFFF;
@@ -168,10 +175,6 @@ section{
   bottom: 10.5%;
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
   letter-spacing: 0.09em;
-}
-
-.font-style-7{
-  font-size: 0.4em;
 }
 
 .input-area input[type="button"]{
