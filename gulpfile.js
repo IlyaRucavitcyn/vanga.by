@@ -3,7 +3,7 @@ var csslint = require('gulp-csslint');
 var concatCss = require('gulp-concat-css');
 
 gulp.task('css', function() {
-  gulp.src('out/css/*.css')
+  gulp.src('css/*.css')
     .pipe(csslint({
       'adjoining-classes':false
     }))
@@ -11,7 +11,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('concatcss', function () {
-  return gulp.src('css/*.css')
+  return gulp.src('css_tmp/*.css')
     .pipe(concatCss("bundle.css"))
     .pipe(gulp.dest('css/'));
 });
