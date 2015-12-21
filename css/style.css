@@ -6,31 +6,31 @@ html{
 
 /*Setting abstraction classes for the font-sizing*/
 
-.font-style-1{
+.font-size-1{
   font-size:52px;
 }
 
-.font-style-2{
+.font-size-2{
     font-size:1.44em;
 }
 
-.font-style-3{
+.font-size-3{
   font-size:0.74em;
 }
 
-.font-style-4{
+.font-size-4{
   font-size:0.673em;
 }
 
-.font-style-5{
+.font-size-5{
   font-size: 0.77em;
 }
 
-.font-style-6{
+.font-size-6{
   font-size: 2.0em;
 }
 
-.font-style-7{
+.font-size-7{
   font-size: 0.4em;
 }
 
