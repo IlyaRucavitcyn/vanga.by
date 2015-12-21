@@ -16,19 +16,20 @@ body{
   overflow:hidden;
   font-family: 'Roboto','HelveticaNeueCyr','HelveticaNeue',Arial, sans-serif;
 }
+.font-style-1{
+  font-size:52px;
+}
 
 .slogan{
   display:inline-block;
   color:rgb(233,240,240);
   color:rgba(233,240,240,1);
   margin: 39px auto auto 40px;
-  font-size: 52px;/*CHANGE FOR MEDIA*/
   line-height:0;
   letter-spacing: 0.18em;
 }
 
 .slogan span:nth-of-type(1){
-  font-size:1em;
   font-weight:500;
   letter-spacing: 0.21em;
   line-height: 0.75;
@@ -42,10 +43,13 @@ body{
 }
 
 .slogan span:nth-of-type(2){
-  font-size:1.44em;
   font-weight:100;
   letter-spacing: 0.045em;
   line-height: 0.68;
+}
+
+.font-style-2{
+    font-size:1.44em;
 }
 
 .slogan span:last-of-type{
