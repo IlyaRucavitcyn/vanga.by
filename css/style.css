@@ -53,10 +53,13 @@ body{
 }
 
 .slogan span:last-of-type{
-  font-size:0.74em;
   font-weight:100;
   letter-spacing: 0.0505em;
   line-height:2.15;
+}
+
+.font-style-3{
+  font-size:0.74em;
 }
 
 .slogan span:nth-of-type(3):before{
@@ -98,7 +101,10 @@ section{
   height:100%;
   text-align:center;
   font-family:'Roboto','HelveticaNeueCyr Thin','HelveticaNeue Thin',Arial, sans-serif;
-  font-size:35px;/*CHANGE FOR MEDIA*/
+}
+
+.font-style-4{
+  font-size:0.673em;
 }
 
 .input-area label{
@@ -107,10 +113,13 @@ section{
   color:rgba( 255, 255, 255, 0.71 );
   /*letter-spacing:0.065em;*/
   text-shadow: 0.03em 0.05em 0 rgb( 0, 0, 0 );
-  font-size: 0.77em;
   font-weight: 100;
   line-height: 2;
   letter-spacing: 0.090em;
+}
+
+.font-style-5{
+  font-size: 0.77em;
 }
 
 .input-wrap{
@@ -121,7 +130,6 @@ section{
   background-color:#8e9292;
   background-color:rgba(142,146,146,0.2);
   text-align:left;
-  font-size: 1em;
 }
 
 .input-area input[type="text"]{
