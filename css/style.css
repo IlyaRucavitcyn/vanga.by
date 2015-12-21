@@ -4,30 +4,59 @@ html{
   background-size:cover;
 }
 
+/*Setting abstraction classes for the font-sizing*/
+
+.font-size-1{
+  font-size:52px;
+}
+
+.font-size-2{
+    font-size:1.44em;
+}
+
+.font-size-3{
+  font-size:0.74em;
+}
+
+.font-size-4{
+  font-size:0.673em;
+}
+
+.font-size-5{
+  font-size: 0.77em;
+}
+
+.font-size-6{
+  font-size: 2.0em;
+}
+
+.font-size-7{
+  font-size: 0.4em;
+}
+
 body{
   width:100%;
   min-height: 100%;
   margin: 0 auto 0 0;
   padding-top:1px;/*to avoid margin collapsing*/
+  background:rgb(0,0,0);
   background:rgba(0,0,0,0.16);
   background-size:cover;
   height:auto;
   overflow:hidden;
   font-family: 'Roboto','HelveticaNeueCyr','HelveticaNeue',Arial, sans-serif;
-  vertival-align:bottom;
 }
 
 .slogan{
   display:inline-block;
+  color:rgb(233,240,240);
   color:rgba(233,240,240,1);
   margin: 39px auto auto 40px;
-  font-size: 52px;/*CHANGE FOR MEDIA*/
   line-height:0;
   letter-spacing: 0.18em;
 }
 
 .slogan span:nth-of-type(1){
-  font-size:1em;
   font-weight:500;
   letter-spacing: 0.21em;
   line-height: 0.75;
@@ -41,14 +70,12 @@ body{
 }
 
 .slogan span:nth-of-type(2){
-  font-size:1.44em;
   font-weight:100;
   letter-spacing: 0.045em;
   line-height: 0.68;
 }
 
 .slogan span:last-of-type{
-  font-size:0.74em;
   font-weight:100;
   letter-spacing: 0.0505em;
   line-height:2.15;
@@ -62,14 +89,14 @@ body{
 }
 
 .more-info{
-    position:absolute;
-    width: 50px;
-    text-align:center;
-    padding:0;
-    margin:0;
-    list-style:none;
-    top: 3%;
-    right: 1.8%;
+  position:absolute;
+  width: 50px;
+  text-align:center;
+  padding:0;
+  margin:0;
+  list-style:none;
+  top: 3%;
+  right: 1.8%;
 }
 
 .more-info a{
@@ -93,15 +120,14 @@ section{
   height:100%;
   text-align:center;
   font-family:'Roboto','HelveticaNeueCyr Thin','HelveticaNeue Thin',Arial, sans-serif;
-  font-size:35px;/*CHANGE FOR MEDIA*/
 }
 
 .input-area label{
   display: inline;
+  color:rgb( 255, 255, 255);
   color:rgba( 255, 255, 255, 0.71 );
   /*letter-spacing:0.065em;*/
-  text-shadow: 0.03em 0.05em 0px rgb( 0, 0, 0 );
-  font-size: 0.77em;
+  text-shadow: 0.03em 0.05em 0 rgb( 0, 0, 0 );
   font-weight: 100;
   line-height: 2;
   letter-spacing: 0.090em;
@@ -112,9 +138,9 @@ section{
   margin:0 auto;
   width: 440px;/*CHANGE FOR MEDIA*/
   height: 115px;/*CHANGE FOR MEDIA*/
+  background-color:#8e9292;
   background-color:rgba(142,146,146,0.2);
   text-align:left;
-  font-size: 1em;
 }
 
 .input-area input[type="text"]{
@@ -125,22 +151,22 @@ section{
   background-color:transparent;
   width:60%;
   border:none;
-  font-size:1em;
   line-height: 1.2;
+  color: rgb( 255, 255, 255);
   color: rgba( 255, 255, 255, 0.341 );
 }
 
 .input-area input[type="text"][name="exchange-rate"]{
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
-  font-size: 2.0em;
   top: 13%;
   left: 6.4%;
   letter-spacing: 0.115em;
   font-weight: 100;
-  outline: none;
 }
 
 .input-area input[type="text"][name="exchange-rate"]:focus{
+  outline: 0;
+  background-color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -148,7 +174,6 @@ section{
   left: 7.4%;
   bottom: 10.5%;
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
-  font-size: 0.4em;
   letter-spacing: 0.09em;
 }
 
@@ -158,12 +183,15 @@ section{
   height: 87px;
   bottom: 12%;
   right: 4%;
-  /*border-radius:5%;*/
+  background: rgb(233,240,240);
   background: rgba(233,240,240,0.651);
   background-size: 100% 100%;
-  /*box-shadow: inset rgba(255, 255, 255, 0.4) 3px 3px 3px 1px, inset rgba(0, 0, 0, 0.3) -3px -3px 3px 1px;*/
   border:none;
-  outline: none;
+}
+
+.input-area input[type="button"]:focus{
+  outline: 0;
+  opacity: 0.651;
 }
 
 .input-area input[type="button"].USD{
@@ -180,11 +208,13 @@ section{
 }
 
 .input-area input[type="button"]:hover{
+  background-color: #E9F0F0;
   background-color:rgba(233,240,240,0.75);
   cursor:pointer;
 }
 
 .input-area input[type="button"]:active{
+  background-color: #FAF0F0;
   background-color:rgba(250,240,240,0.75);
   box-shadow: inset rgba(255, 255, 255, 0.4) 2px 2px 2px 1px, inset rgba(0, 0, 0, 0.3) -2px -2px 2px 1px;
   cursor:pointer;
@@ -193,24 +223,24 @@ section{
 .currency-choice{
   position:absolute;
   text-align:center;
-  font-size:1em;/*CHANGE FOR MEDIA*/
   right: 1.8%;/*CHANGE FOR MEDIA*/
   top: 37.4%;
-  text-align: center;
 }
 
 .currency-button{
   display:block;
-  outline:none;
   border:none;
   background:none;
   background-size:100% 100%;
   border-radius: 50%;
   margin: 0 auto 19px auto;
-  padding:0 0 10px 0;
   width: 50px;
   height: 50px;
-  box-sizing: border-box;
+}
+
+.currency-button:focus{
+  outline:0;
+  opacity: 1;
 }
 
 .currency-button.USD{
