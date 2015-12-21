@@ -140,7 +140,6 @@ section{
   background-color:transparent;
   width:60%;
   border:none;
-  font-size:1em;
   line-height: 1.2;
   color: rgb( 255, 255, 255);
   color: rgba( 255, 255, 255, 0.341 );
@@ -148,11 +147,14 @@ section{
 
 .input-area input[type="text"][name="exchange-rate"]{
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
-  font-size: 2.0em;
   top: 13%;
   left: 6.4%;
   letter-spacing: 0.115em;
   font-weight: 100;
+}
+
+.font-style-6{
+  font-size: 2.0em;
 }
 
 .input-area input[type="text"][name="exchange-rate"]:focus{
@@ -165,8 +167,11 @@ section{
   left: 7.4%;
   bottom: 10.5%;
   font-family: 'Roboto','HelveticaNeueCyr Ultralight','HelveticaNeue Ultralight',Arial, sans-serif;
-  font-size: 0.4em;
   letter-spacing: 0.09em;
+}
+
+.font-style-7{
+  font-size: 0.4em;
 }
 
 .input-area input[type="button"]{
@@ -215,7 +220,6 @@ section{
 .currency-choice{
   position:absolute;
   text-align:center;
-  font-size:1em;/*CHANGE FOR MEDIA*/
   right: 1.8%;/*CHANGE FOR MEDIA*/
   top: 37.4%;
 }
