@@ -11,7 +11,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('concatcss', function () {
-  return gulp.src('css_tmp/*.css')
+  return gulp.src('src/*.css')
     .pipe(concatCss("bundle.css"))
     .pipe(gulp.dest('css/'));
 });
