@@ -4,6 +4,7 @@ var jslint = require('gulp-jslint');
 var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
+var uglify = require('gulp-uglify');
 
 
 gulp.task('csslint', function() {
@@ -47,4 +48,10 @@ gulp.task('cssmin', function () {
 	gulp.src('css/*.css')
 		.pipe(cssmin())
 		.pipe(gulp.dest('css'));
+});
+
+gulp.task('jsmin', function() {
+  return gulp.src('js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('js'));
 });
