@@ -3,6 +3,7 @@ var csslint = require('gulp-csslint');
 var jslint = require('gulp-jslint');
 var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
+var cssmin = require('gulp-cssmin');
 
 
 gulp.task('csslint', function() {
@@ -31,14 +32,19 @@ gulp.task('jslint', function () {
 });
 
 gulp.task('concatcss', function () {
-  return gulp.src('src/css/*.css')
-    .pipe(concatCss("bundle.css"))
+  return gulp.src('src/css_files/*.css')
+    .pipe(concatCss('bundle.css'))
     .pipe(gulp.dest('css/'));
 });
 
-
 gulp.task('concatjs', function() {
-  return gulp.src('src/js/*.js')
+  return gulp.src('src/js_files/*.js')
     .pipe(concat('all.js'))
     .pipe(gulp.dest('js/'));
+});
+
+gulp.task('cssmin', function () {
+	gulp.src('css/*.css')
+		.pipe(cssmin())
+		.pipe(gulp.dest('css'));
 });
