@@ -56,3 +56,11 @@ gulp.task('jsmin', function() {
     .pipe(uglify())
     .pipe(gulp.dest('js'));
 });
+
+gulp.task('watch', function() {
+  gulp.watch('src/js_files/*.js', ['jslint', 'concatjs']);
+});
+
+gulp.task('watch', function() {
+  gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
+});

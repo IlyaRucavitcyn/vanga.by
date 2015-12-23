@@ -15,7 +15,6 @@ ol, ul {
 	}
 address, caption, cite, code, dfn, em, strong, th, var {
 	font-weight: normal;
-	font-style: normal;
 	}
 caption, th {
 	text-align: left;
