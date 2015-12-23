@@ -5,6 +5,7 @@ var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
+var rename = require("gulp-rename");
 
 
 gulp.task('csslint', function() {
