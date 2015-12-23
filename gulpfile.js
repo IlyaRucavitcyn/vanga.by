@@ -5,6 +5,7 @@ var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
+var rename = require("gulp-rename");
 
 
 gulp.task('csslint', function() {
@@ -55,3 +56,13 @@ gulp.task('jsmin', function() {
     .pipe(uglify())
     .pipe(gulp.dest('js'));
 });
+
+gulp.task('watch', function() {
+  gulp.watch(['src/**/*.css','src/**/*.js'], ['jslint', 'concatjs', 'csslint', 'concatcss']);
+});
+
+// gulp.task('watch', function() {
+//   gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
+// });
+
+gulp.task('default',['csslint', 'concatcss', 'jslint', 'concatjs', 'watch']);
