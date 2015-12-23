@@ -58,9 +58,11 @@ gulp.task('jsmin', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('src/js_files/*.js', ['jslint', 'concatjs']);
+  gulp.watch(['src/**/*.css','src/**/*.js'], ['jslint', 'concatjs', 'csslint', 'concatcss']);
 });
 
-gulp.task('watch', function() {
-  gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
-});
+// gulp.task('watch', function() {
+//   gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
+// });
+
+gulp.task('default',['csslint', 'concatcss', 'jslint', 'concatjs', 'watch']);
