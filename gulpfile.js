@@ -6,6 +6,7 @@ var concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
+var ghPages = require('gulp-gh-pages');
 
 
 gulp.task('csslint', function() {
@@ -64,5 +65,10 @@ gulp.task('watch', function() {
 // gulp.task('watch', function() {
 //   gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
 // });
+
+gulp.task('deploy', function() {
+  return gulp.src('./src/**')
+    .pipe(ghPages());
+});
 
 gulp.task('default',['csslint', 'concatcss', 'jslint', 'concatjs', 'watch']);
