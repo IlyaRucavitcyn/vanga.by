@@ -7,6 +7,7 @@ var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
 var ghPages = require('gulp-gh-pages');
+var debug = require('gulp-debug');
 
 
 gulp.task('csslint', function() {
@@ -67,8 +68,9 @@ gulp.task('watch', function() {
 // });
 
 gulp.task('deploy',['concatcss','cssmin','concatjs','jsmin'], function() {
-  return gulp.src('/src/*')
-    .pipe(ghPages());
+  return gulp.src('../vanga.by/*')
+    .pipe(ghPages())
+    .pipe(debug({title: 'gulp-debug:'}));
 });
 
 gulp.task('default',['csslint', 'concatcss', 'jslint', 'concatjs', 'watch']);
