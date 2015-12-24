@@ -70,7 +70,7 @@ gulp.task('watch', function() {
 gulp.task('deploy', function() {
   return gulp.src('../vanga.by/*')
     .pipe(ghPages())
-    .pipe(debug({title: 'gulp-debug:'}));
+    .pipe(debug({title: 'debug:'}));
 });
 
 gulp.task('default',['csslint', 'concatcss', 'jslint', 'concatjs', 'watch']);
