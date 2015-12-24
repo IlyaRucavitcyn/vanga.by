@@ -66,8 +66,8 @@ gulp.task('watch', function() {
 //   gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
 // });
 
-gulp.task('deploy', function() {
-  return gulp.src('/**/*')
+gulp.task('deploy',['concatcss','cssmin','concatjs','jsmin'], function() {
+  return gulp.src('/src/*')
     .pipe(ghPages());
 });
 
