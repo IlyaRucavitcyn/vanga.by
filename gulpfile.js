@@ -67,7 +67,7 @@ gulp.task('watch', function() {
 //   gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
 // });
 
-gulp.task('deploy',['concatcss','cssmin','concatjs','jsmin'], function() {
+gulp.task('deploy', function() {
   return gulp.src('../vanga.by/*')
     .pipe(ghPages())
     .pipe(debug({title: 'gulp-debug:'}));
