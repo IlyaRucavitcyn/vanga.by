@@ -48,15 +48,15 @@ gulp.task('concatjs', function() {
 });
 
 gulp.task('cssmin', function () {
-	gulp.src('css/*.css')
+	gulp.src('../vanga.by_production/css/*.css')
 		.pipe(cssmin())
-		.pipe(gulp.dest('css'));
+		.pipe(gulp.dest('css/*.css'));
 });
 
 gulp.task('jsmin', function() {
   return gulp.src('js/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('js'));
+    .pipe(gulp.dest('../vanga.by_production/js/'));
 });
 
 gulp.task('watch', function() {
@@ -67,10 +67,10 @@ gulp.task('watch', function() {
 //   gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
 // });
 
-gulp.task('deploy', function() {
+gulp.task('deploy',['cssmin','jsmin'], function() {
   return gulp.src('../vanga.by/**/*.*')
     .pipe(ghPages())
-    .pipe(debug({title: 'debug:'}));
+    // .pipe(debug({title: 'debug:'}));
 });
 
 gulp.task('default',['csslint', 'concatcss', 'jslint', 'concatjs', 'watch']);
