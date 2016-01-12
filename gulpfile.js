@@ -48,7 +48,7 @@ gulp.task('concatjs', function() {
 });
 
 gulp.task('cssmin', function () {
-	gulp.src('../vanga.by_production/css/*.css')
+	gulp.src('src/css_files/*.css')
 		.pipe(cssmin())
 		.pipe(gulp.dest('css/*.css'));
 });
@@ -56,7 +56,7 @@ gulp.task('cssmin', function () {
 gulp.task('jsmin', function() {
   return gulp.src('js/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('../vanga.by_production/js/'));
+    .pipe(gulp.dest('src/js_files/*.js'));
 });
 
 gulp.task('watch', function() {
