@@ -68,7 +68,7 @@ gulp.task('watch', function() {
 // });
 
 gulp.task('deploy',['cssmin','jsmin'], function() {
-  return gulp.src('../vanga.by/**/*.*')
+  return gulp.src('./**/*.*')
     .pipe(ghPages())
     // .pipe(debug({title: 'debug:'}));
 });
