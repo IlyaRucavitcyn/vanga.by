@@ -16,6 +16,9 @@ burgerIcon.onclick = function (e) {
     }
 };
 
+
+
+
 infoBar.onclick = function () {
     this.classList.add('hide');
 };

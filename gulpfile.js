@@ -6,6 +6,8 @@ var concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
+var ghPages = require('gulp-gh-pages');
+var debug = require('gulp-debug');
 
 
 gulp.task('csslint', function() {
@@ -46,15 +48,15 @@ gulp.task('concatjs', function() {
 });
 
 gulp.task('cssmin', function () {
-	gulp.src('css/*.css')
+	gulp.src('src/css_files/*.css')
 		.pipe(cssmin())
-		.pipe(gulp.dest('css'));
+		.pipe(gulp.dest('css/*.css'));
 });
 
 gulp.task('jsmin', function() {
   return gulp.src('js/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('js'));
+    .pipe(gulp.dest('src/js_files/*.js'));
 });
 
 gulp.task('watch', function() {
@@ -64,5 +66,11 @@ gulp.task('watch', function() {
 // gulp.task('watch', function() {
 //   gulp.watch('src/css_files/*.css', ['csslint', 'concatcss']);
 // });
+
+gulp.task('deploy',['cssmin','jsmin'], function() {
+  return gulp.src('./**/*.*')
+    .pipe(ghPages())
+    // .pipe(debug({title: 'debug:'}));
+});
 
 gulp.task('default',['csslint', 'concatcss', 'jslint', 'concatjs', 'watch']);
