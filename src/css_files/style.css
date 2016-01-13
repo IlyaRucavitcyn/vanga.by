@@ -1,15 +1,43 @@
 html{
   height:100%;
-  background: url("../img/background_1950.jpg") no-repeat left top;
-  background-size:cover;
+  /*background: url("../img/background_1950.jpg") no-repeat left top;
+  background-size:cover;*/
 }
 
+.bgvid {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -10000;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url("../img/background_1950.jpg") no-repeat left top;
+    background-size:cover;
+}
 /*Setting abstraction classes for the font-sizing*/
 
 .font-size-1{
   font-size:52px;
 }
 
+.font-size-2{
+    font-size:1.44em;
+}
+
+.font-size-3{
+  font-size:0.74em;
+}
+
+.font-size-4{
+  font-size:0.673em;
+}
 
 .font-size-5{
   font-size: 0.77em;
@@ -37,6 +65,9 @@ body{
 }
 
 .slogan{
+  position:absolute;
+  top: 0;
+  left: 0;
   display:inline-block;
   color:rgb(233,240,240);
   color:rgba(233,240,240,1);
