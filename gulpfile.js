@@ -54,9 +54,9 @@ gulp.task('cssmin', function () {
 });
 
 gulp.task('jsmin', function() {
-  return gulp.src('js/*.js')
+  return gulp.src('src/js_files/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('src/js_files/*.js'));
+    .pipe(gulp.dest('js/*.js'));
 });
 
 gulp.task('watch', function() {
