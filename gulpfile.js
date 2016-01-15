@@ -50,13 +50,13 @@ gulp.task('concatjs', function() {
 gulp.task('cssmin', function () {
 	gulp.src('src/css_files/*.css')
 		.pipe(cssmin())
-		.pipe(gulp.dest('css/*.css'));
+		.pipe(gulp.dest('css/'));
 });
 
 gulp.task('jsmin', function() {
   return gulp.src('src/js_files/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('js/*.js'));
+    .pipe(gulp.dest('js/'));
 });
 
 gulp.task('watch', function() {
