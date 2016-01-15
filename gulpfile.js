@@ -69,8 +69,8 @@ gulp.task('watch', function() {
 
 gulp.task('deploy',['cssmin','jsmin'], function() {
   return gulp.src('./**/*.*')
-    .pipe(ghPages())
-    // .pipe(debug({title: 'debug:'}));
+    // .pipe(debug({title: 'debug:'}))
+    .pipe(ghPages());
 });
 
 gulp.task('default',['csslint', 'concatcss', 'jslint', 'concatjs', 'watch']);
