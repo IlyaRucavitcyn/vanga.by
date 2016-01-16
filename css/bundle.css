@@ -380,7 +380,7 @@ footer {
   min-height: 200px;
 }
 
-.info-button-container a {
+.info-button-container button {
   display: block;
   position: absolute;
   bottom: 10%;
@@ -389,6 +389,7 @@ footer {
   height: 38px;
   background: url("../img/ibutton.svg");
   background-size: 100% 100%;
+  border: none;
 }
 
 .info-icon-class {

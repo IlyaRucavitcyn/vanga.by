@@ -8,11 +8,9 @@ function vidFade() {
     vid.classList.add("stopfade");
 }
 pauseButton.addEventListener("click", function () {
-    vid.classList.toggle("stopfade");
     if (vid.paused) {
         vid.play();
-        return false;
+        return;
     }
     vid.pause();
-    return false;
 });
