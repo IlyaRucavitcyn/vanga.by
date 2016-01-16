@@ -1,0 +1,1 @@
+"use strict";var burgerIcon=document.getElementById("burger-icon-cont"),infoBar=document.getElementById("info-icon");burgerIcon.onclick=function(e){for(var n=e.target;n!==this;){if("A"===n.tagName)return infoBar.classList.remove("hide"),!1;n=n.parentNode}},infoBar.onclick=function(){this.classList.add("hide")};
