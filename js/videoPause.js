@@ -1,0 +1,1 @@
+"use strict";function vidFade(){vid.classList.add("stopfade")}var vid=document.getElementById("bgvid"),pauseButton=document.getElementById("vidpause");pauseButton.addEventListener("click",function(){return vid.paused?void vid.play():void vid.pause()});
