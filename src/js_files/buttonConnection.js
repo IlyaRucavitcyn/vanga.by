@@ -4,6 +4,9 @@
 
 var currencyChoiceContainer = document.getElementById('currency-choice-container');
 var currentCurrencyButton = document.getElementById('current-currency');
+var currencyInputForm = document.getElementById('currency-input-form');
+var chartContainer = document.getElementById('chart-container');
+var currentCurrency = "USD";
 
 currencyChoiceContainer.onclick = function (e) {
     var target = e.target,
@@ -23,10 +26,18 @@ currencyChoiceContainer.onclick = function (e) {
     forEach.call(buttonCollection, function (x) {
         if (x.classList.contains('active')) {
             x.classList.remove('active');
-            currentCurrencyButton.classList.remove(x.getAttribute('id'));
+            if (currentCurrencyButton) { currentCurrencyButton.classList.remove(x.getAttribute('id')); }
         }
     });
     target.classList.add('active');
-    currentCurrencyButton.classList.add(target.getAttribute('id'));
+    if (currentCurrencyButton) { currentCurrencyButton.classList.add(target.getAttribute('id')); }
+    currentCurrency = target.getAttribute('id');
     return;
 };
+
+// if (currentCurrencyButton) {
+//   currentCurrencyButton.addEventListener("click", function () {
+//       chartContainer.classList.remove('invisible');
+//       currencyInputForm.classList.add('invisible');
+//   }, false);
+// }

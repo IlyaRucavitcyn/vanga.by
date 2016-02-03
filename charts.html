@@ -24,6 +24,19 @@
               <source src="video/vanga.mp4" type="video/mp4">
               <source src="video/vanga_webm.webm" type="video/webm">
           </video>
+          <div id="chart-container" class="chart-enclosure invisible">
+            <div id="container"></div>
+            <div class="output-wrapper">
+              <div class="output-field">
+                <p class="font-size-8">ВАШ ПРОГНОЗ НА ЗАВТРА</p>
+                <output class="font-size-9" name="result">17880</output>
+               </div>
+              <a class="font-size-10" href="#">ИЗМЕНИТЬ</a>
+            </div>
+            <div class="change-wrapper font-size-11">
+                <a href="#">СООБЩИТЬ РЕЗУЛЬТАТЫ</a>
+            </div>
+          </div>
           <header>
               <div class="slogan">
                 <span>КУРС</span></br>
@@ -39,16 +52,7 @@
             <button id="EUR" class="currency-button EUR" type="button" name="button"></button>
             <button id="RUB" class="currency-button RUB" type="button" name="button"></button>
           </div>
-          <section>
-              <form id="currency-input-form" class="input-area font-size-4" action="index.html" method="post">
-                  <label class="font-size-5" for="exchangeValue">ВАНГУЮ КУРС НА ЗАВТРА</label>
-                  <div class="input-wrap">
-                    <a href="./charts.html"><input id="current-currency" type="button" class="USD" name="name" value=""></a>
-                    <input id="exchangeValue" class="font-size-6" type="text" placeholder="17550" name="exchange-rate"></br>
-                    <input type="text" readonly class="font-size-7" name="current-exchange-rate" placeholder="ТЕКУЩИЙ КУРС (20.11.2015)">
-                  </div>
-              </form>
-          </section>
+
           <div id="info-icon" class="info-icon-class hide"></div>
           <footer>
             <div id="vidpause" class="info-button-container">

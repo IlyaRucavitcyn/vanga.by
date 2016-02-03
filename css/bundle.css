@@ -126,6 +126,22 @@ html {
   font-size: 0.4em;
 }
 
+.font-size-8 {
+  font-size: 20px;
+}
+
+.font-size-9 {
+  font-size: 45px;
+}
+
+.font-size-10 {
+  font-size: 15px;
+}
+
+.font-size-11 {
+  font-size: 22px;
+}
+
 body {
   width: 100%;
   min-height: 100%;
@@ -138,6 +154,79 @@ body {
   height: auto;
   overflow: hidden;
   font-family: 'Roboto','HelveticaNeueCyr','HelveticaNeue',Arial, sans-serif;
+}
+
+.chart-enclosure {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: #000000;
+  background-color: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  padding: 18% 9% 10% 9%;
+}
+
+.output-wrapper {
+  width: 1315px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 57px;
+}
+
+.output-field {
+  display: inline-block;
+  width: 490px;
+  height: 57px;
+  margin-top: 28px;
+  margin-right: 5px;
+  background-color: rgb(121, 114, 114);
+  background-color: rgba(121, 114, 114, 0.2);
+  color: rgb(233,240,240);
+  color: rgba(233,240,240,0.5);
+  font-weight: 200;
+}
+
+.output-field p {
+  text-align: left;
+  padding-left: 17px;
+  /*font-size: 20px;*/
+  line-height: 57px;
+  float: left;
+  letter-spacing: 0.11em;
+}
+
+.output-field output {
+  display: block;
+  padding-left: 30px;
+  /*font-size: 45px;*/
+  line-height: 57px;
+  letter-spacing: 0.1em;
+}
+
+.output-wrapper a {
+  /*font-size: 15px;*/
+  vertical-align: middle;
+  color: rgb(233,240,240);
+  color: rgba(233,240,240,0.5);
+  font-weight: 200;
+}
+
+.change-wrapper {
+  width: 1220px;
+  margin: 0 auto;
+  /*font-size: 22px;*/
+  font-weight: 200;
+  margin-top: 43px;
+  text-align: center;
+}
+
+.change-wrapper a {
+  color: rgb(233,240,240);
+  color: rgba(233,240,240,0.5);
+  letter-spacing: 0.03em;
 }
 
 .slogan {
@@ -193,6 +282,7 @@ body {
   list-style: none;
   top: 3%;
   right: 1.8%;
+  z-index: 5;
 }
 
 .more-info a {
@@ -324,6 +414,7 @@ section {
   right: 1.8%;
   /*CHANGE FOR MEDIA*/
   top: 37.4%;
+  z-index: 5;
 }
 
 .currency-button {
@@ -390,6 +481,7 @@ footer {
   background: url("../img/ibutton.svg");
   background-size: 100% 100%;
   border: none;
+  z-index: 5;
 }
 
 .info-icon-class {
@@ -400,6 +492,7 @@ footer {
   height: 100%;
   background: white;
   transition: left 1s ease;
+  z-index: 6;
 }
 
 .info-icon-class.hide {
