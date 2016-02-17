@@ -13,7 +13,8 @@ var debug = require('gulp-debug');
 gulp.task('csslint', function() {
   gulp.src('src/**/*.css')
     .pipe(csslint({
-      'adjoining-classes':false
+      'adjoining-classes':false,
+      'box-sizing':false
     }))
     .pipe(csslint.reporter());
 });
