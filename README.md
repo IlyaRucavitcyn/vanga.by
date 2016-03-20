@@ -1,39 +1,35 @@
-# node-js-getting-started
+## DB.js module
 [![Build Status](https://travis-ci.org/IlyaRucavitcyn/vanga.by.svg?branch=master)](https://travis-ci.org/IlyaRucavitcyn/vanga.by)
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+A node.js module for mongodb, based on 'mongojs' npm module, that allows us to work with MongoDB within the methods it provides
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+In order to work with the module make sure [mongojs](https://www.npmjs.com/package/mongojs) is installed via [npm](https://www.npmjs.com/)
 
-## Running Locally
+# Connecting to the app
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
+To connect the model to your app simply copy it to your project root and include this in the app:
 
 ```
-$ heroku create
-$ git push heroku master
-$ heroku open
+var database = require('../db').connecting({
+    url: "mongodb://localhost:27017/",
+    dbname: "test",
+    collection: "testingCollection",
+});
 ```
-or
+using parameters of the database you plan to work with
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+# Methods, provided by the module
 
-## Documentation
+Inserting new data into the defined collection and db:
+```
+database.insertData(data)
+```
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+Finding docs according to the selector you want:
+```
+database.insertData(selector,[callback])
+```
 
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+Cleaning up the defined collection of the db:
+```
+database.dropData(selector,[callback])
+```
