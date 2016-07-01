@@ -13,7 +13,7 @@ createButton.addEventListener('click', function(e) {
         date: new Date()
     });
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://localhost:3000/send/', true);
+    xhr.open('POST', 'send/', true);
     xhr.setRequestHeader("Content-type", "application/json");
     xhr.send(data);
 });
@@ -34,7 +34,7 @@ getAllButton.addEventListener('click', function(e) {
     e.preventDefault();
     $.ajax({
         type: "GET",
-        url: "http://localhost:3000/build/",
+        url: "build/",
         contentType: "application/json",
         success: function(result) {
             // Incoming data modifying for highcharts
