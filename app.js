@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static('public'));
 
-app.set('views', __dirname + '/views');
+app.set('views', './Views');
 app.set('view engine', 'pug');
 
 app.get('/', function(request, response) {

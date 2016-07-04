@@ -9,7 +9,7 @@ html
     div.container
       div.row
         div.col-md-12
-          form(action="http://localhost:3000/send", method="post")
+          form(action="/send", method="post")
             div.row
               div.col-md-12
                 div.input-group.input-group-lg
@@ -32,7 +32,7 @@ html
                 input.btn.btn-info(id="currency-create", type="submit", value="SEND THE INFO")
 
               div.col-md-6.text-center
-                form(action="http://localhost:3000/build", method="get")
+                form(action="/build", method="get")
                     input.btn.btn-success(id="get-all-data", type="submit", value="CREATE CHARTS")
 
 
@@ -42,6 +42,6 @@ html
 
       script(src="https://code.jquery.com/jquery-2.2.4.min.js", integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", crossorigin="anonymous")
       script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
-      script(src="http://code.highcharts.com/highcharts.js")
+      script(src="https://code.highcharts.com/highcharts.js")
       script(src="./js/charts.js")
       script(src="./js/main.js")

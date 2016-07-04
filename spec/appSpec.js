@@ -1,7 +1,7 @@
 var request = require('supertest');
 var app = require('../app');
 var database = require('../db').connecting({
-    url: "mongodb://localhost:27017/",
+    url: "mongodb://vanga:hello1234@ds011705.mlab.com:11705/currencies",
     dbname: "test",
     collection: "testingCollection",
 });
@@ -25,7 +25,7 @@ describe("Server requesting GET '/'", function() {
 describe('Database testing ', function() {
     it('whether SINGLETON pattern really works', function() {
         var cloneDataBase = require('../db').connecting({
-            url: "mongodb://localhost:27017/",
+            url: "mongodb://vanga:hello1234@ds011705.mlab.com:11705/currencies",
             dbname: "test",
             collection: "testingCollection",
         });

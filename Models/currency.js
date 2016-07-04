@@ -2,7 +2,7 @@ var fs = require('fs');
 var mongojs = require('mongojs');
 
 module.exports = (function() {
-    var currentData = mongojs('mongodb://localhost:27017/currency', ['currencies']).currencies;
+    var currentData = mongojs('mongodb://vanga:hello1234@ds011705.mlab.com:11705/currencies', ['currencies']).currencies;
 
     function create(dataNew) {
         currentData.insert(dataNew);
