@@ -7,41 +7,17 @@ html
     link(rel="stylesheet", href="./css/style.css")
   body
     div.container
-      div.row
-        div.col-md-12
-          form(action="/send", method="post")
-            div.row
-              div.col-md-12
-                div.input-group.input-group-lg
-                  span#sizing-addon1.input-group-addon CURRENCY
-                    input#inputForm.form-control.currency-type(type="text", placeholder="usd", aria-describedby="sizing-addon1", name="currency")
-            div.row
-              div.col-md-12
-                div.input-group.input-group-lg
-                  span#sizing-addon1.input-group-addon RATE
-                    input#inputForm.form-control.currency-rate(type="text", placeholder="20000", aria-describedby="sizing-addon1", name="rate")
-            div.row
-              div.col-md-12
-                div.input-group.input-group-lg
-                  span#sizing-addon1.input-group-addon EMAIL
-                    input#inputForm.form-control.user-email(type="text", placeholder="enter your email", aria-describedby="sizing-addon1", name="email")
-            div.row
-              div.col-md-12(style="height:20px")
-            div.row
-              div.col-md-6.text-center
-                input.btn.btn-info(id="currency-create", type="submit", value="SEND THE INFO")
+      .row.bg-success
+        h1.col-xs-12 First row
+      .row.bg-warning
+        h1.col-xs-12 Second row
+      .row.bg-info
+        h1.col-xs-12 Third row
+      .row.bg-danger
+        h1.col-xs-12 Forth row
 
-              div.col-md-6.text-center
-                form(action="/build", method="get")
-                    input.btn.btn-success(id="get-all-data", type="submit", value="CREATE CHARTS")
-
-
-      div.row
-        div.col-md-12
-          div#container.opacity-hidden.opacity
-
-      script(src="https://code.jquery.com/jquery-2.2.4.min.js", integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", crossorigin="anonymous")
-      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
-      script(src="https://code.highcharts.com/highcharts.js")
-      script(src="./js/charts.js")
-      script(src="./js/main.js")
+    script(src="https://code.jquery.com/jquery-2.2.4.min.js", integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
+    script(src="https://code.highcharts.com/highcharts.js")
+    script(src="./js/charts.js")
+    script(src="./js/main.js")
