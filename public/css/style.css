@@ -1,8 +1,0 @@
-.opacity-hidden {
-  opacity:0;
-  transition: opacity 1s;
-}
-
-.opacity {
-  transition: opacity 1s;
-}
