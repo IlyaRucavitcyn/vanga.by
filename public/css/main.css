@@ -1,0 +1,34 @@
+/*Special classes for svg background*/
+
+
+/*Positioning styling*/
+
+
+/*If we need to center a block element*/
+
+
+/*style for the parent element*/
+
+.relative {
+    position: relative;
+}
+
+/*style for the target element*/
+
+.vertical-centering {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.horizontal-centering {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.centering{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
