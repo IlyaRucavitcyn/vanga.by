@@ -25,10 +25,49 @@
     left: 50%;
     transform: translateX(-50%);
 }
+.centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-.centering{
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+/*Styling buttons for currency changing*/
+
+
+/*Styling round buttons*/
+
+.currency-button {
+    border: none;
+    border-radius: 50%;
+    background: none;
+    width: 55px;
+    height: 55px;
+}
+.stop-video-button{
+  border: none;
+  border-radius: 50%;
+  background: url('../img/ibutton.svg') no-repeat;;
+  width: 40px;
+  height: 40px;
+}
+/*Styling buttons for the exact currencies*/
+
+.currency-button.usd {
+    background: url('../img/usd_unchecked.svg') no-repeat;
+}
+.currency-button.usd.active {
+    background: url('../img/usd_checked.svg') no-repeat;
+}
+.currency-button.euro {
+    background: url('../img/euro_unchecked.svg') no-repeat;
+}
+.currency-button.euro.active {
+    background: url('../img/euro_checked.svg') no-repeat;
+}
+.currency-button.ruble {
+    background: url('../img/ruble_unchecked.svg') no-repeat;
+}
+.currency-button.ruble.active {
+    background: url('../img/ruble_checked.svg') no-repeat;
 }

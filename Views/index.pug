@@ -6,29 +6,29 @@ html(style="height:100%;")
         link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
         link(rel="stylesheet", href="./css/main.css")
     body(style="height:100%;")
-        div.container.bg-warning
-            .row.bg-success
+        div.container.bg-primary
+            .row
                 .col-xs-12(style="height:70px;")
                     .row
                         .col-xs-2.relative.bg-primary(style="height:70px;")
                             img.centering(src="./img/burgerbutton.svg", width="35px", alt="Menu")
-            .row.bg-info
+            .row
                 .col-xs-12(style="height:130px;") Second row
-            .row.bg-primary
+            .row
                 .col-xs-12(style="height:200px;") Third row
         div(style="position:absolute; width:100%;bottom:0;")
-          div.container.bg-warning
-            .row.bg-success
+          div.container.bg-primary
+            .row
                 .col-xs-12(style="height:90px;")
                   .row(style="height:100%;")
                     .col-xs-2(style="height:100%")
-                      button.centering
+                      button.centering.currency-button.usd.active
                     .col-xs-2(style="height:100%")
-                      button.centering
+                      button.centering.currency-button.euro
                     .col-xs-2(style="height:100%")
-                      button.centering
+                      button.centering.currency-button.ruble
                     .col-xs-2.col-xs-offset-4(style="height:100%")
-                      button.centering
+                      button.centering.stop-video-button
         script(src="https://code.jquery.com/jquery-2.2.4.min.js", integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", crossorigin="anonymous")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js", integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS", crossorigin="anonymous")
         script(src="https://code.highcharts.com/highcharts.js")
