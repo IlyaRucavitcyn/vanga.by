@@ -41,15 +41,17 @@
     border: none;
     border-radius: 50%;
     background: none;
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
+    outline:none;
 }
 .stop-video-button{
   border: none;
   border-radius: 50%;
   background: url('../img/ibutton.svg') no-repeat;;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+  outline:none;
 }
 /*Styling buttons for the exact currencies*/
 
