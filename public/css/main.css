@@ -1,3 +1,9 @@
+/*All in all styles*/
+
+body {
+  background:url('../img/background.jpg') 50% 50%/cover no-repeat;
+}
+
 /*Special classes for svg background*/
 
 
@@ -43,16 +49,18 @@
     background: none;
     width: 45px;
     height: 45px;
-    outline:none;
+    outline: none;
 }
-.stop-video-button{
-  border: none;
-  border-radius: 50%;
-  background: url('../img/ibutton.svg') no-repeat;;
-  width: 35px;
-  height: 35px;
-  outline:none;
+.stop-video-button {
+    border: none;
+    border-radius: 50%;
+    background: url('../img/ibutton.svg') no-repeat;
+    ;
+    width: 35px;
+    height: 35px;
+    outline: none;
 }
+
 /*Styling buttons for the exact currencies*/
 
 .currency-button.usd {
