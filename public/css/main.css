@@ -17,7 +17,7 @@ body {
     line-height: 0.8;
 }
 .logo-second-row {
-    font-size: 80px;
+    font-size: 65px;
     line-height: 0.7;
     font-weight: 200;
 }
@@ -30,7 +30,7 @@ body {
 /*Input for styling*/
 
 .label-text {
-    font-size: 25px;
+    font-size: 20px;
     color: rgb( 255, 255, 255);
     color: rgba( 255, 255, 255, 0.71);
     text-shadow: 0.03em 0.05em 0 rgb( 0, 0, 0);
