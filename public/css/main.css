@@ -27,6 +27,16 @@ body {
     font-weight: 100;
 }
 
+/*Input for styling*/
+
+.label-text {
+    font-size: 25px;
+    color: rgb( 255, 255, 255);
+    color: rgba( 255, 255, 255, 0.71);
+    text-shadow: 0.03em 0.05em 0 rgb( 0, 0, 0);
+    font-weight: 100;
+}
+
 /*Special classes for svg background*/
 
 

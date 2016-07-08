@@ -18,8 +18,17 @@ html(style="height:100%;")
                 .col-xs-10.col-xs-offset-2.text-left.logo-first-row КУРС
                 .col-xs-12.text-center.logo-second-row ВАНГУЕМ
                 .col-xs-12.text-right.logo-third-row ВМЕСТЕ
+                .col-xs-12(style="height:90px")
             .row
-                .col-xs-12(style="height:200px;") Third row
+              form
+                .col-xs-12.text-center
+                  label.label-text(for="currencyRate") ВАНГУЕМ КУРС НА ЗАВТРА
+                .col-xs-10.col-xs-offset-1.bg-success(style="height:100px")
+                  .row.bg-warning(style="height:100%")
+                    .col-xs-8(style="height:100%")
+                      input.centering(type='text', class='form-control', placeholder="22000", id='currencyRate', style="width:auto;")
+                    .col-xs-4(style="height:100%")
+                      button.centering(type="submit", class="btn btn-default") $
         div(style="position:absolute; width:100%;bottom:0;")
           div.container
             .row
