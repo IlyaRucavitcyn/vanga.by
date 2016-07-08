@@ -1,7 +1,30 @@
 /*All in all styles*/
 
 body {
-  background:url('../img/background.jpg') 50% 50%/cover no-repeat;
+    background: url('../img/background.jpg') 65% 50%/cover no-repeat;
+    font-family: 'Roboto';
+}
+
+/*Logo styling*/
+
+.logo {
+    color: rgb(233, 240, 240);
+    color: rgba(233, 240, 240, 1);
+    line-height: 1;
+}
+.logo-first-row {
+    font-size: 50px;
+    line-height: 0.8;
+}
+.logo-second-row {
+    font-size: 80px;
+    line-height: 0.7;
+    font-weight: 200;
+}
+.logo-third-row {
+    font-size: 40px;
+    line-height: 0.9;
+    font-weight: 100;
 }
 
 /*Special classes for svg background*/

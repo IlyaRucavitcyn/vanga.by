@@ -5,6 +5,7 @@ html(style="height:100%;")
         meta(name="viewport", content="width=device-width", initial-scale='1')
         title
         link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7", crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic",rel='stylesheet', type='text/css')
         link(rel="stylesheet", href="./css/main.css")
     body(style="height:100%;")
         div.container
@@ -13,8 +14,10 @@ html(style="height:100%;")
                     .row
                         .col-xs-2.relative(style="height:70px;")
                             img.centering(src="./img/burgerbutton.svg", width="35px", alt="Menu")
-            .row
-                .col-xs-12(style="height:130px;") Second row
+            .row.logo(style="height:130px;")
+                .col-xs-10.col-xs-offset-2.text-left.logo-first-row КУРС
+                .col-xs-12.text-center.logo-second-row ВАНГУЕМ
+                .col-xs-12.text-right.logo-third-row ВМЕСТЕ
             .row
                 .col-xs-12(style="height:200px;") Third row
         div(style="position:absolute; width:100%;bottom:0;")
